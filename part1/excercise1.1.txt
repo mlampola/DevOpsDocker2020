@@ -1,0 +1,6 @@
+markus@markus-ubuntu:~$ sudo docker ps -a
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                     PORTS               NAMES
+5f6ddf54e6ef        nginx               "nginx -g 'daemon of…"   2 minutes ago       Up 2 minutes               80/tcp              friendly_swanson
+0cf1e30dc16b        nginx               "nginx -g 'daemon of…"   2 minutes ago       Exited (0) 6 seconds ago                       mystifying_agnesi
+8cef2b590add        nginx               "nginx -g 'daemon of…"   2 minutes ago       Exited (0) 6 seconds ago                       keen_banach
+

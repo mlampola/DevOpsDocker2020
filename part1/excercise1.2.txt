@@ -1,0 +1,6 @@
+markus@markus-ubuntu:~/Git/MoocDevOpsDocker2020/part1$ sudo docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+markus@markus-ubuntu:~/Git/MoocDevOpsDocker2020/part1$ sudo docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+markus@markus-ubuntu:~/Git/MoocDevOpsDocker2020/part1$ 
+
