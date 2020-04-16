@@ -1,0 +1,35 @@
+markus@markus-ubuntu:~/Git/MoocDevOpsDocker2020/part1$ sudo docker run -it --name excercise1.5 ubuntu:16.04 sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+Input website:
+helsinki.fi
+Searching..
+sh: 1: curl: not found
+
+markus@markus-ubuntu:~/Git/MoocDevOpsDocker2020/part1$ sudo docker start excercise1.5
+excercise1.5
+markus@markus-ubuntu:~/Git/MoocDevOpsDocker2020/part1$ sudo docker exec -it excercise1.5 bash
+root@718380538ed7:/# apt update && apt upgrade
+...
+root@718380538ed7:/# apt install curl
+...
+root@718380538ed7:/# curl --version
+curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
+Protocols: dict file ftp ftps gopher http https imap imaps ldap ldaps pop3 pop3s rtmp rtsp smb smbs smtp smtps telnet tftp 
+Features: AsynchDNS IDN IPv6 Largefile GSS-API Kerberos SPNEGO NTLM NTLM_WB SSL libz TLS-SRP UnixSockets
+root@718380538ed7:/# exit
+exit
+
+markus@markus-ubuntu:~/Git/MoocDevOpsDocker2020/part1$ sudo docker stop excercise1.5
+excercise1.5
+markus@markus-ubuntu:~/Git/MoocDevOpsDocker2020/part1$ sudo docker start excercise1.5
+excercise1.5
+markus@markus-ubuntu:~/Git/MoocDevOpsDocker2020/part1$ sudo docker attach excercise1.5
+helsinki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
+</body></html>
+
