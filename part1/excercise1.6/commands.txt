@@ -1,0 +1,14 @@
+// 1. Edit start.sh:
+#!/bin/sh
+node index --clock 0
+
+// 2. Create Dockerfile
+
+// 3. Build image
+markus@markus-ubuntu:~/Git/MoocDevOpsDocker2020/part1/excercise1.6$ sudo docker build -t docker-clock .
+
+// 4. Start container
+markus@markus-ubuntu:~/Git/MoocDevOpsDocker2020/part1/excercise1.6$ sudo docker run --name excercise1.6 docker-clock
+1
+2
+3
