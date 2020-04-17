@@ -1,0 +1,3 @@
+markus@markus-ubuntu:~/Git/MoocDevOpsDocker2020/part1/excercise1.8$ touch logs.txt
+markus@markus-ubuntu:~/Git/MoocDevOpsDocker2020/part1/excercise1.8$ sudo docker run -v $(pwd)/logs.txt:/usr/app/logs.txt devopsdockeruh/first_volume_exercise
+
