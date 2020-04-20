@@ -1,0 +1,5 @@
+markus@markus-ubuntu:~/Git/MoocDevOpsDocker2020/part1$ sudo docker run -p 80:80/tcp devopsdockeruh/ports_exercise
+
+markus@markus-ubuntu:~$ curl localhost
+Ports configured correctly!!markus@markus-ubuntu:~$ 
+
