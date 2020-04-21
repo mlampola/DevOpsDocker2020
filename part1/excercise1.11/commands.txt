@@ -1,0 +1,4 @@
+markus@markus-ubuntu:~/Git/backend-example-docker$ sudo docker build -t excercise1.11 .
+markus@markus-ubuntu:~/Git/backend-example-docker$ sudo docker run -v $(pwd)/logs.txt:/usr/app/logs.txt -p 8000:8000/tcp excercise1.11
+markus@markus-ubuntu:~$ curl localhost:8000
+Port configured correctly, generated message in logs.txt
