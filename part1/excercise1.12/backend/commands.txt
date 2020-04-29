@@ -1,0 +1,9 @@
+markus@markus-ubuntu:~/Git/backend-example-docker$ sudo docker build -t excercise1.12b .
+markus@markus-ubuntu:~/Git/backend-example-docker$ sudo docker run -v $(pwd)/logs.txt:/usr/app/logs.txt -p 8000:8000/tcp excercise1.12b
+
+> backend-example-docker@1.0.0 start /usr/app
+> cross-env NODE_ENV=production node index.js
+
+Browserslist: caniuse-lite is outdated. Please run next command `npm update caniuse-lite browserslist`
+Started on port 8000
+
