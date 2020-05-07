@@ -1,0 +1,7 @@
+markus@markus-ubuntu:~/Git/scaling-exercise$ docker-compose up -d --scale compute=2
+calculator is up-to-date
+Starting scalingexercise_compute_1 ... 
+Starting scalingexercise_compute_1 ... done
+Creating scalingexercise_compute_2 ... 
+Creating scalingexercise_compute_2 ... done
+
