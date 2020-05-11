@@ -1,0 +1,32 @@
+version: '3.5'
+
+services:
+  backend:
+    image: backend2.6
+    build: ./backend-example-docker
+    container_name: back2.6
+    ports: 
+      - 8000:8000 
+    environment: 
+      - REDIS=redis
+      - DB_USERNAME=postgres
+      - DB_PASSWORD=example
+      - DB_HOST=database
+    depends_on: 
+      - database
+  frontend:
+    image: frontend2.6
+    build: ./frontend-example-docker
+    container_name: front2.6
+    ports: 
+      - 5000:5000
+  redis:
+    image: "redis:alpine"
+    container_name: redis
+  database:
+    image: postgres
+    restart: unless-stopped
+    environment:
+      - POSTGRES_PASSWORD=example
+    container_name: db_backend
+
