@@ -23,6 +23,8 @@ services:
   redis:
     image: "redis:alpine"
     container_name: redis
+    volumes:
+      - redisfiles:/data
   database:
     image: postgres
     restart: unless-stopped
@@ -42,5 +44,6 @@ services:
 
 volumes:
   dbfiles:
+  redisfiles:
 
 
