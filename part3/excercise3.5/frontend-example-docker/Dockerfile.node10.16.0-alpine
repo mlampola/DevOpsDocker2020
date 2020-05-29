@@ -1,0 +1,10 @@
+FROM node:10.16.0-alpine
+WORKDIR /app
+COPY . .
+EXPOSE 5000
+ENV API_URL=http://localhost/api/
+RUN npm install && \ 
+    adduser -D app && \
+    chown -hR app /app
+USER app
+CMD API_URL=$API_URL npm start
